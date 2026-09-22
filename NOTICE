@@ -1,0 +1,49 @@
+BEVMatch
+Copyright 2026 Perception for Autonomous Driving, Institute for Autonomous Driving,
+University of the Bundeswehr Munich
+
+This product includes software developed as part of the following projects.
+
+--------------------------------------------------------------------------------
+MMDetection3D — https://github.com/open-mmlab/mmdetection3d
+Copyright (c) OpenMMLab. All rights reserved.
+Licensed under the Apache License, Version 2.0.
+
+Files derived from this project:
+  bevmatch/base_keypoints.py
+  bevmatch/data_preprocessor_keypoints.py
+  bevmatch/preprocessor_utils.py
+  bevmatch/voxelize.py
+  bevmatch/kitti_odometry_keypoints.py
+  bevmatch/nuscenes_dataset_keypoints.py
+  bevmatch/nuscenes_metric_keypoints.py
+  bevmatch/loading.py
+  tools/train.py
+
+--------------------------------------------------------------------------------
+BEVFusion — https://github.com/mit-han-lab/bevfusion
+Licensed under the Apache License, Version 2.0.
+
+Files derived from this project:
+  bevmatch/bevfusion_necks.py
+  bevmatch/depth_lss.py
+  bevmatch/transfusion_head.py
+  bevmatch/transforms_3d.py
+  bevmatch/sparse_encoder.py
+  bevmatch/utils.py
+  bevmatch/ops/            (voxelization and BEV pooling CUDA kernels)
+
+--------------------------------------------------------------------------------
+Detectron2 / Meta Platforms, Inc.
+Copyright (c) Facebook, Inc. and its affiliates.
+Licensed under the Apache License, Version 2.0.
+
+Files derived from this project:
+  bevmatch/ops/voxel/voxelize.py
+
+--------------------------------------------------------------------------------
+Modifications
+The files listed above have been modified for BEVMatch. The keypoint detection and
+description head (bevmatch/keypoint_head.py), the BEV warping and geometry helpers,
+the cross-attention fusion, the dataset adapters for paired-frame sampling and the
+KITTI odometry tools are original contributions of this work.

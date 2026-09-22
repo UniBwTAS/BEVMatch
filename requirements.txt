@@ -1,0 +1,22 @@
+# In addition to the MMDetection3D stack (mmengine 0.10, mmcv 2.1, mmdet 3.3, mmdet3d 1.4).
+
+# Required by the model (imported when `bevmatch` is loaded)
+numpy>=1.21
+scipy>=1.7
+opencv-python>=4.5
+pillow>=9.0
+scikit-learn>=1.0
+torch>=1.13
+torchvision>=0.14
+info-nce-pytorch>=0.1.4
+nuscenes-devkit>=1.1.10
+pyquaternion>=0.9.9
+tensorboard>=2.10
+
+# Optional -- only needed by the tools named on the right.
+# matplotlib>=3.5        tools/kitti_kpt_odometry.py (trajectory plots)
+# open3d>=0.17           tools/baseline_lidar.py
+# kornia>=0.7            tools/baseline_matchers.py
+# transformers>=4.40     tools/baseline_matchers.py; depth-network LSS variants
+# romav2                 tools/baseline_matchers.py (RoMa v2)
+# spconv-cu120           faster sparse convolution; mmcv.ops is used otherwise

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+work_dirs/
+data/
+*.pth
+*.npz
+*.so
+build/
